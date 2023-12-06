@@ -1,0 +1,23 @@
+package com.global.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity()
+@Table(name ="users")
+@Setter
+@Getter
+@All
+public class AppUser {
+
+	private Long id ;
+	private String fullName ;
+	private String userName ;
+	private String password ;
+	
+	
+	
+	
+}
