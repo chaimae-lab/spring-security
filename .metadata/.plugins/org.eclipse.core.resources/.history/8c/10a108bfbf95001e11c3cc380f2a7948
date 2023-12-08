@@ -1,0 +1,55 @@
+package com.global.service;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import com.global.Repository.RoleRepo;
+import com.global.Repository.UserRepo;
+import com.global.entity.Roles;
+
+import lombok.RequiredArgsConstructor;
+import java.util.List; // Importez la classe List
+import lombok.RequiredArgsConstructor;
+
+import lombok.RequiredArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.RequiredArgsConstructor;
+
+import lombok.RequiredArgsConstructor;
+
+import lombok.RequiredArgsConstructor;
+
+
+
+
+
+@Service
+
+public class RoleService {
+	
+	
+	private final RoleRepo roleRepo ;
+	
+	
+	
+/////get tous les roles
+	public List<Roles>  findAll(){
+	
+	               return roleRepo.findAll();
+	           
+       }
+
+	
+	
+	////get role par id 
+	public Roles findById (id) {
+		    
+		return userRepo.findById(id);
+	}
+	
+	
+	
+	
+	
+
+}

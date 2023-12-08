@@ -1,0 +1,38 @@
+package com.global.service;
+
+import org.springframework.stereotype.Service;
+
+import com.global.Repository.RoleRepo;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class RoleService {
+	
+	
+	private final RoleRepo roleRepo ;
+	
+	
+	
+/////get tous les roles
+	public list<Roles>  findAll(){
+	
+	               return roleRepo.findAll();
+	           
+       }
+
+	
+	
+	////get user par id 
+	public AppUser findById (id) {
+		    
+		return userRepo.findById(id);
+	}
+	
+	
+	
+	
+	
+
+}

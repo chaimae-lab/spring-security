@@ -1,0 +1,16 @@
+package com.global.service;
+
+import org.springframework.stereotype.Service;
+
+import com.global.Repository.UserRepo;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class RoleService {
+	
+	
+	private final RoleRepo roleRepo ;
+
+}

@@ -1,0 +1,48 @@
+package com.global.service;
+
+import org.springframework.stereotype.Service;
+
+import com.global.Repository.UserRepo;
+import com.global.entity.AppUser;
+
+import java.util.List; // Importez la classe List
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class UserService {
+
+	//import l repository dans le service 
+	
+	private final UserRepo userRepo ;
+	
+	
+	/////get tous les users
+	public list<AppUser>  findAll(){
+	
+	               return userRepo.findAll();
+	           
+       }
+
+	
+	
+	////get user par id 
+	public AppUser findById (Long id) {
+		    
+		return userRepo.findById(id).orElse(null); // Utilisez orElse(null) pour gérer le cas où l'utilisateur n'est pas trouvé;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	

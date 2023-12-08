@@ -1,0 +1,16 @@
+package com.global.service;
+
+import org.springframework.stereotype.Service;
+
+import com.global.Repository.UserRepo;
+
+@Service
+public class UserService {
+
+	//import l repository dans le service 
+	
+	private final UserRepo userRepo ;
+	
+	
+	
+}

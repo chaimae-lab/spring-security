@@ -1,0 +1,30 @@
+package com.global.service;
+
+import org.springframework.stereotype.Service;
+
+import com.global.Repository.UserRepo;
+import com.global.entity.UserRepo;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class UserService {
+
+	//import l repository dans le service 
+	
+	private final UserRepo userRepo ;
+	
+	
+	/////get tous les users
+	public list<AppUser>  findAll(){
+	
+	               return userRepo.findAll();
+	           
+       }
+
+	
+	
+	
+	public AppUser findByid 
+	
